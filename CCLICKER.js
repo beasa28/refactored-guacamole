@@ -16858,6 +16858,7 @@ LAUNCH THIS THING
 
 window.onload=function()
 {
+	Game.ready = true;
 	if (!Game.ready)
 	{
 		var loadLangAndLaunch=function(lang,firstLaunch)
