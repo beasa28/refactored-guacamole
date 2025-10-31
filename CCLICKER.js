@@ -16858,7 +16858,7 @@ LAUNCH THIS THING
 
 window.onload=function()
 {
-	Game.ready = true;
+
 	if (!Game.ready)
 	{
 		var loadLangAndLaunch=function(lang,firstLaunch)
@@ -16871,8 +16871,8 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						Game.Load(function(){Game.Init();if (firstLaunch) Game.showLangSelection(true);});
-						/*
+
+						
 						if (top!=self) Game.ErrorFrame();
 						else
 						{
@@ -16887,7 +16887,7 @@ window.onload=function()
 							//try {Game.Load(Game.Init);}
 							//catch(err) {console.log('ERROR : '+err.message);}
 						}
-						*/
+						
 
 					}
 					if (App && App.loadMods) App.loadMods(launch);
